@@ -1,0 +1,21 @@
+.gss-launcher { display: grid; place-items: center; width: 48px; height: 48px; margin: 4px auto; border: 0; border-radius: 16px; background: var(--background-secondary); color: var(--text-normal); cursor: pointer; }
+.gss-launcher:hover { background: var(--brand-500); color: white; }
+.gss-panel { display: flex; flex-direction: column; gap: 14px; padding: 4px; color: var(--text-normal); }
+.gss-query, .gss-filters select { box-sizing: border-box; width: 100%; padding: 12px; border: 1px solid var(--background-modifier-accent); border-radius: 8px; background: var(--background-tertiary); color: var(--text-normal); font: inherit; }
+.gss-query { font-size: 18px; }
+.gss-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; }
+.gss-filters label { display: flex; flex-direction: column; flex: 1 1 150px; gap: 6px; font-size: 13px; }
+.gss-filters .gss-checkbox { flex: 0 1 auto; flex-direction: row; align-items: center; padding: 10px 0; }
+.gss-summary { display: flex; justify-content: space-between; align-items: center; color: var(--text-muted); font-size: 13px; }
+.gss-summary button, .gss-more { border: 0; border-radius: 6px; padding: 8px 12px; background: var(--background-secondary); color: var(--text-normal); cursor: pointer; }
+.gss-results { max-height: 45vh; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; }
+.gss-result { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px; border: 0; border-radius: 8px; background: var(--background-secondary); color: var(--text-normal); text-align: left; cursor: pointer; }
+.gss-result:hover, .gss-result:focus-visible { background: var(--background-modifier-hover); }
+.gss-symbol { font-size: 20px; color: var(--text-muted); width: 24px; text-align: center; }
+.gss-result-details { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 4px; }
+.gss-result-details strong, .gss-result-details small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gss-result-details small, .gss-badge, .gss-hint { color: var(--text-muted); font-size: 12px; }
+.gss-badge { white-space: nowrap; }
+.gss-empty { padding: 24px; text-align: center; color: var(--text-muted); }
+.gss-hint { margin: 0; line-height: 1.5; }
+.gss-panel :focus-visible, .gss-launcher:focus-visible { outline: 2px solid var(--brand-500); outline-offset: 2px; }
